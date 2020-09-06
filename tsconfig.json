@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-      "outDir": "./dist/",
+      "outDir": "./build/",
       "sourceMap": true,
       "strict": true,
       "noImplicitReturns": true,
@@ -10,8 +10,9 @@
       "target": "es5",
       "allowJs": true,
       "jsx": "react",
+      "allowSyntheticDefaultImports": true,
   },
   "include": [
-      "./src/**/*"
+      "./client/**/*"
   ]
 }
