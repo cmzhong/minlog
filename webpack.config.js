@@ -2,12 +2,13 @@ const webpack = require('webpack');
 const path = require('path');
 
 const config = {
-  // initial file that webpack parses through to make a dependency graph of all file assets to be bundled together
+  mode: process.env.NODE_ENV,
   entry: [
-    './client/index.js'
+    './client/index.tsx'
   ],
   output: {
-    path: path.resolve('build'),
+    publicPath: '/',
+    path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js'
   },
   module: {
@@ -33,12 +34,7 @@ const config = {
     ],
   },
   devServer: {
-    publicPath: '/build/',
-    contentBase: './build',
-    proxy: {
-      // optional to place stars /api/**
-      '/api': 'http://localhost:3000'
-    }
+    publicPath: '/build',
   }
 };
 
