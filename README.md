@@ -1,2 +1,2 @@
 # minlog
-Sharing itineraries is a pain - you're either sending a long text message that gets pushed into the abyss or a Google Sheets that is hard to read on mobile. Minlog hopes to make create, orgnize, and share itineraries easier. 
+Sharing itineraries is a pain - you're either sending a long text message that gets pushed into the abyss or a Google Sheets that is hard to read on mobile. Minlog hopes to make creating, organizing, and sharing itineraries easier. 
