@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import About from './components/About';
 import Map from './components/Map';
-
+import './stylesheets/styles.scss'
 
 interface Props {
 }

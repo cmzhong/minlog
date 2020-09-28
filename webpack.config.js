@@ -23,19 +23,28 @@ const config = {
         loader: 'ts-loader',
         exclude: /node_modules/
       },
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+        ]
+      },
     ],
   },
   resolve: {
     extensions: [
       '.js',
-      '.jxs',
+      '.jsx',
       '.tsx',
-      '.ts'
+      '.ts',
     ],
   },
   devServer: {
     publicPath: '/build',
-  }
+    hot: true,
+  },
 };
 
 module.exports = config;
